@@ -6,6 +6,7 @@
             </div>
         </div>
         <div class="site-mobile-menu-body"></div>
+        dhtftgf
     </div>
 </template>
 
@@ -14,8 +15,16 @@
         name: "Header",
         data() {
             return {
-                links: []
+                links: [],
+                clientInfo: {},
             }
+        },
+
+        methods: {
+            getLinks(){
+                $axios.get("./data/menu.json")
+            }
+
         }
         
     }
