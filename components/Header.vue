@@ -25,7 +25,9 @@
                 $axios.get("./data/menu.json")
             }
 
-        }
+        },
+
+        
         
     }
 </script>
